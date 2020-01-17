@@ -1,2 +1,8 @@
-<mat-toolbar color="primary">
-  Gamers Nation</mat-toolbar>
+<mat-toolbar color="primary" class="toolbar">
+ <img src="../favicon.ico" alt="Page Logo" class="pageLogo">
+  FEIT Gaming
+</mat-toolbar>
+
+<div *ngFor="let game of games">
+  <app-game (click)="onClick(game)"[pictureUrl]="game.photoUrl"></app-game>
+</div>

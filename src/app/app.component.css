@@ -1,0 +1,14 @@
+.toolbar {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.pageLogo {
+  margin-left: 0.2em;
+  margin-top: 2em;
+ 
+  width: 5em;
+  height: 5em;
+}

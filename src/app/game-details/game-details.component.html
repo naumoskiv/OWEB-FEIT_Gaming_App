@@ -1,10 +1,10 @@
-<img mat-card-image [src]="data.clickedPost.photoUrl" alt="Game Logo" class="sizeImg2 float-left">
+<img mat-card-image [src]="data.clickedGame.photoUrl" alt="Game Logo" class="sizeImg2 float-left">
 <div class="scroll">
-    <div class="rating"  *ngFor="let game of Games">
+    <div class="rating"  *ngFor="let gamedetail of Gamedetails">
             <mat-card-header>
                     <img mat-card-avatar [src]="game.photoUrl">
-                    <mat-card-title>{{game.name}}</mat-card-title>
-                    <mat-card-subtitle>{{game.year}}</mat-card-subtitle>
+                    <mat-card-title>{{gamedetail.name}}</mat-card-title>
+                    <mat-card-subtitle>{{gamedetail.year}}</mat-card-subtitle>
             </mat-card-header>
             <hr/>
     </div>

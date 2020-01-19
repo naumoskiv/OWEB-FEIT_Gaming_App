@@ -14,7 +14,7 @@
                 <mat-card-title class="rating">Rating: {{data.clickedGame.rating}}</mat-card-title>
             </mat-card-actions>
             
-            <div class="comment"  *ngFor="let gameComment of gameComments">
+            <!-- <div class="comment"  *ngFor="let gameComment of gameComments">
                 <mat-card-header>
                         <img mat-card-avatar [src]="gameComment.photoUrl">
                         <mat-card-title>{{gameComment.fullName}}</mat-card-title>
@@ -22,13 +22,29 @@
                 </mat-card-header>
                 <small><p><b>{{gameComment.comment}}</b></p></small>
                 <hr/>
-        </div>
-        <div class="comment">
-            <mat-form-field>
-                <input matInput placeholder="Share your opinion..." [(ngModel)]="newComment.comment">
-            </mat-form-field>
-            <button mat-raised-button (click)="onComment()">Comment</button>
-        </div>
+            </div> -->
+
+                <!-- Implementiran Virtual Scroll za komentari -->
+                <cdk-virtual-scroll-viewport [itemSize]="100" style="height: 200px">
+                    <div *cdkVirtualFor="let gameComment of gameComments">
+                        <mat-card-header>
+                            <img mat-card-avatar [src]="gameComment.photoUrl">
+                            <mat-card-title>{{gameComment.fullName}}</mat-card-title>
+                            <mat-card-subtitle>{{gameComment.accountName}}</mat-card-subtitle>
+                        </mat-card-header>
+                        <small><p><b>{{gameComment.comment}}</b></p></small>
+                        <hr/>
+                        <br>
+                        <br>
+                    </div>
+                </cdk-virtual-scroll-viewport>
+
+            <div class="comment">
+                <mat-form-field>
+                    <input matInput placeholder="Give your opinion..." [(ngModel)]="newComment.comment">
+                </mat-form-field>
+                <button mat-raised-button (click)="onComment()" color="accent">Comment</button>
+            </div>
     </div>
 </div>
 

@@ -23,10 +23,10 @@ export class GameDetailsComponent implements OnInit {
     private apiService: FeitGamingApiService) { 
 
     this.newComment = {id: this.data.clickedGame.id,
-                      accountName: '@naumoskiv', 
+                      accountName: '@naumoskiv @tode^', 
                       comment: '',
                       photoUrl: 'https://p7.hiclipart.com/preview/312/283/679/avatar-computer-icons-user-profile-business-user-avatar.jpg',
-                      fullName: 'Viktor Naumoski'};
+                      fullName: 'Viktor Naumoski - Nikola Nencev'};
                         
     // this.gameDetails = [
     //   {id: 1, rating: 10, name: 'Counter-Strike: Global Offensive', photoUrl: "https://ih1.redbubble.net/image.286894384.7375/flat,750x,075,f-pad,750x1000,f8f8f8.jpg", 

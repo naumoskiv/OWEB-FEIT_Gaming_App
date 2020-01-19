@@ -3,6 +3,13 @@
   FEIT Gaming
 </mat-toolbar>
 
+<div class="scrolldown">
+  <span></span>
+  <span></span>
+  <span></span>
+
+</div>
+
 <div *ngFor="let game of games">
   <app-game (click)="onClick(game)"[pictureUrl]="game.photoUrl"></app-game>
 </div>

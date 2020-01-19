@@ -9,8 +9,8 @@
             </mat-card-header>
             
             <mat-card-actions>
-                <button mat-raised-button (click)="onUpvote()">Upvote</button>
-                <button mat-raised-button (click)="onDownvote()">Downvote</button>
+                <button mat-raised-button (click)="onUpvote()"color="primary">Upvote</button>
+                <button mat-raised-button (click)="onDownvote()" color="accent">Downvote</button>
                 <mat-card-title class="rating">Rating: {{data.clickedGame.rating}}</mat-card-title>
             </mat-card-actions>
             
@@ -25,7 +25,7 @@
         </div>
         <div class="comment">
             <mat-form-field>
-                <input matInput placeholder="Give your opinion..." [(ngModel)]="newComment.comment">
+                <input matInput placeholder="Share your opinion..." [(ngModel)]="newComment.comment">
             </mat-form-field>
             <button mat-raised-button (click)="onComment()">Comment</button>
         </div>

@@ -1,14 +1,20 @@
 .sizeImg2{
-    width: 105%;
+    width: 104.5%;
     height: 59%;
 }
 
-.scroll {
+/* .scroll {
     overflow: auto;
     height: 80%;
-}
+} */
 
 .details {
     width: 90%;
+    margin: auto;
 } 
+
+.rating{
+    float: right;
+    font-size: 90%;
+}
 

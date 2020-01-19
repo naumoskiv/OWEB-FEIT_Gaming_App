@@ -5,7 +5,6 @@
                     <img mat-card-avatar [src]="data.clickedGame.logoUrl" alt="Game Logo">
                     <mat-card-title><strong>{{data.clickedGame.name}}</strong></mat-card-title>
                     <mat-card-subtitle>{{data.clickedGame.description}}</mat-card-subtitle>
-                    
             </mat-card-header>
             
             <mat-card-actions>
@@ -45,6 +44,14 @@
                 </mat-form-field>
                 <button mat-raised-button (click)="onComment()" color="accent">Comment</button>
             </div>
+        </div>
+
+        <div class="comment">
+            <mat-form-field>
+                <input matInput placeholder="Share your opinion..." [(ngModel)]="newComment.comment">
+            </mat-form-field>
+            <button mat-raised-button (click)="onComment()">Comment</button>
+        </div>
     </div>
 </div>
 

@@ -44,6 +44,14 @@
                 </mat-form-field>
                 <button mat-raised-button (click)="onComment()" color="accent">Comment</button>
             </div>
+        </div>
+
+        <div class="comment">
+            <mat-form-field>
+                <input matInput placeholder="Share your opinion..." [(ngModel)]="newComment.comment">
+            </mat-form-field>
+            <button mat-raised-button (click)="onComment()">Comment</button>
+        </div>
     </div>
 </div>
 

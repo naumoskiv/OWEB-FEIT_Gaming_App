@@ -13,3 +13,9 @@
 <div *ngFor="let game of games">
   <app-game (click)="onClick(game)"[pictureUrl]="game.photoUrl"></app-game>
 </div>
+<!-- <cdk-virtual-scroll-viewport [itemSize]="800" style="height:700px">
+  <div *cdkVirtualFor="let game of games">
+    <app-game (click)="onClick(game)"[pictureUrl]="game.photoUrl"></app-game>
+  </div>
+</cdk-virtual-scroll-viewport>-->
+<!-- Funkcionira podobro(vizuelno) beez Virtual scrolling-->
